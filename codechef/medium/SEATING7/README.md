@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:52:29.530Z  
+**Submitted:** 2026-09-30T14:45:36.301Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -64,25 +64,6 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	int t;
-	cin>>t;
-	while(t--){
-	    int a,b,c;
-	    int d,e;
-	    cin>>a>>b>>c>>d>>e;
-	    
-	    for(int i=1;i<=a;i++){
-	        if(i==d||i==e)
-	        continue;
-	        if(c!=0)
-	        cout<<i<<" ";
-	        else if(c==0)
-	        break;
-	        
-	        c--;
-	    }
-	    cout<<endl;
-	}
 
 }
 
