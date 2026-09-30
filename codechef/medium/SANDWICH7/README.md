@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:33:09.655Z  
+**Submitted:** 2026-09-30T14:38:28.914Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,7 +67,9 @@ int main() {
 	// your code goes here
 	int a,b,c;
 	cin>>a>>b>>c;
-	cout<<a/2;
+	int x=a/b;
+	
+	cout<<x+(x/c);
 	
 
 }
