@@ -56,36 +56,46 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:58:50.454Z  
+**Submitted:** 2026-09-30T15:01:44.843Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int t;
-    cin >> t;
+    int T;
+    cin >> T;
 
-    while(t--) {
-        int a, b, c;
-        int d, e;
+    while(T--) {
+        int N, M, K;
+        cin >> N >> M >> K;
 
-        cin >> a >> b >> c >> d >> e;
+        vector<int> seat(N + 1, 0);
 
-      for(int i = 1; i <= a; i++) {
+        // Mark already occupied seats
+        for(int i = 0; i < M; i++) {
+            int x;
+            cin >> x;
+            seat[x] = 1;
+        }
 
-    if(i == d || i == e)
-        continue;
+        // Find seats for K new people
+        for(int person = 0; person < K; person++) {
 
-    if(c == 0)
-        break;
+            for(int i = 1; i <= N; i++) {
 
-    cout << i << " ";
-    c--;
-}
+                if(seat[i] == 0) {
+                    cout << i << " ";
+                    seat[i] = 1;
+                    break;
+                }
+            }
+        }
 
         cout << endl;
     }
+
+    return 0;
 }
 ```
 
