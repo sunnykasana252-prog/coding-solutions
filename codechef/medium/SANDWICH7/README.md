@@ -57,7 +57,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:40:04.687Z  
+**Submitted:** 2026-09-30T14:39:43.000Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -67,7 +67,7 @@ int main() {
 	// your code goes here
 	int a,b,c;
 	cin>>a>>b>>c;
-
+	int x=a/b;
 	
 	cout<<min(a/2,b+c);
 	
