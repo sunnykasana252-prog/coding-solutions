@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:54:41.625Z  
+**Submitted:** 2026-09-30T14:58:50.454Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,17 +72,17 @@ int main() {
 
         cin >> a >> b >> c >> d >> e;
 
-        for(int i = 1; i <= a; i++) {
+      for(int i = 1; i <= a; i++) {
 
-            if(i == d || i == e)
-                continue;
+    if(i == d || i == e)
+        continue;
 
-            if(c == 0)
-                break;
+    if(c == 0)
+        break;
 
-            cout << i << " ";
-            c--;
-        }
+    cout << i << " ";
+    c--;
+}
 
         cout << endl;
     }
