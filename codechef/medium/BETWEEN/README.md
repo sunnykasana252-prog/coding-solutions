@@ -60,7 +60,7 @@ Your rival team is $1$st, and you are $2$nd, no teams between you.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T14:36:44.084Z  
+**Submitted:** 2026-10-21T14:37:13.551Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
