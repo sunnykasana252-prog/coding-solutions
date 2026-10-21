@@ -1,7 +1,26 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N, S;
+        cin >> N >> S;
+
+        int c = (S + 3) / 4;
+
+        int ans = 5 * c - S;
+
+        if (ans <= N) {
+            cout << ans << endl;
+        } 
+        else {
+            cout << -1 << endl;
+        }
+    }
+
+    return 0;
 }
