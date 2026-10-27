@@ -44,9 +44,9 @@ Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 189 ms (beats 7.09%)  
-**Memory:** 24.1 MB (beats 89.14%)  
-**Submitted:** 2026-10-27T05:20:40.867Z  
+**Runtime:** 182 ms (beats 10.91%)  
+**Memory:** 24.1 MB (beats 94.71%)  
+**Submitted:** 2026-10-27T05:25:33.260Z  
 
 ```cpp
 class Solution {
