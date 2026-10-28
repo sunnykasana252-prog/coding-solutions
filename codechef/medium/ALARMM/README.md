@@ -70,17 +70,46 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:35:30.106Z  
+**Submitted:** 2026-10-28T15:36:06.865Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+
+        string s;
+        cin >> s;
+
+        int ans = 0;
+        int i = 0;
+
+        while (i < n) {
+
+            if (s[i] == '1') {
+
+                int p = min(n - 1, i + k);
+
+                ans++;
+
+                i = p + 1;
+            }
+            else {
+                i++;
+            }
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
 }
-
 ```
 
 ---
