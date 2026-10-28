@@ -70,14 +70,14 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:35:10.159Z  
+**Submitted:** 2026-10-28T15:35:30.106Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+	
 
 }
 
