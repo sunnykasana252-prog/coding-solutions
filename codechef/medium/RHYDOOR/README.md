@@ -66,21 +66,10 @@ BBBBAAAAABBBBBBB
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T14:47:42.472Z  
+**Submitted:** 2026-10-28T14:48:10.728Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-    int t;
-    cin >> t;
-
-    while (t--) {
-        string s;
-        cin >> s;
-
-       #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -95,27 +84,28 @@ int main() {
         cin >> s;
 
         int c = 0;
+        int ans = 0;
 
-        for (int i = 0; i < n;) {
-            int j = i;
-
-            while (j < n && s[i] == s[j]) {
-                j++;
-            }
-
-            if (j - i >= 3) {
+        for (int i = 0; i < n; i++) {
+            if (s[i] == s[i+1]) {
                 c++;
             }
+            else {
+                c = 0;
+            }
 
-            i = j;
+            if (c == 2) {
+                ans++;
+                c = 0;
+                i++;
+            }
         }
 
-        cout << c << endl;
+        cout << ans << endl;
     }
 
     return 0;
 }
-
 ```
 
 ---
