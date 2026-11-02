@@ -39,19 +39,18 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 9 MB (beats 70.21%)  
-**Submitted:** 2026-11-02T15:13:55.257Z  
+**Submitted:** 2026-11-02T15:17:50.926Z  
 
 ```cpp
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-               if(haystack.find(needle) != string::npos){
-                int pos = haystack.find(needle);
-                return pos;
-               }   
-               else{
-                return -1;
-               }
+        int pos = haystack.find(needle);
+
+        if(pos != string::npos) {
+            return pos;
+        }
+        return -1;
     }
 };
 ```
