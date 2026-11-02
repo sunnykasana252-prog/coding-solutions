@@ -1,12 +1,11 @@
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-               if(haystack.find(needle) != string::npos){
-                int pos = haystack.find(needle);
-                return pos;
-               }   
-               else{
-                return -1;
-               }
+        int pos = haystack.find(needle);
+
+        if(pos != string::npos) {
+            return pos;
+        }
+        return -1;
     }
 };
