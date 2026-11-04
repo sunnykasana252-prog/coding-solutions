@@ -75,7 +75,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:55:31.481Z  
+**Submitted:** 2026-11-04T15:11:24.485Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -84,17 +84,19 @@ using namespace std;
 int main() {
   int t;
   cin>>t;
-  vector<vector<int>> a;
   while(t--){
-      int x,y;
-      cin>>x>>y;
-      
-      for(int i=0;i<x;i++){
-          for(int j=0;j<y;j++){
-              cin>>a[i][j];
-          }
-          
-      }
+     int x, y;
+cin >> x >> y;
+
+vector<vector<int>> a(x, vector<int>(y));
+
+for(int i = 0; i < x; i++) {
+    for(int j = 0; j < y; j++) {
+        cin >> a[i][j];
+    }
+}
+
+
   }
 }
 
