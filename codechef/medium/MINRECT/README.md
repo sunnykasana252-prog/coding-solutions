@@ -75,15 +75,27 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:52:13.482Z  
+**Submitted:** 2026-11-04T14:55:39.484Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
-
+  int t;
+  cin>>t;
+  vector<vector<int>> a;
+  while(t--){
+      int x,y;
+      cin>>x>>y;
+      
+      for(int i=0;i<x;i++){
+          for(int j=0;j<y;j++){
+              cin>>a[i][j];
+          }
+          
+      }
+  }
 }
 
 ```
