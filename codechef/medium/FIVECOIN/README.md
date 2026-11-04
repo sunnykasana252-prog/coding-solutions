@@ -78,25 +78,29 @@ Use the $5$-rupee coin and three $1$-rupee coins.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T14:40:31.330Z  
+**Submitted:** 2026-11-04T14:38:45.281Z  
 
 ```c_cpp
-
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+	int n;
+	cin>>n;
+	if(n<5){
+	    cout<<n<<endl;
+	}
+	
+  else if(n%5==0){
+	    cout<<n/5<<endl;
+	}
+	
+	else{
+	    int x=n-5;
+	    cout<<x+1<<endl;
+	}
+	
 
-    if (n < 5) {
-        cout << n << endl;
-    }
-    else {
-        cout << n - 4 << endl;
-    }
-
-    return 0;
 }
 
 ```
