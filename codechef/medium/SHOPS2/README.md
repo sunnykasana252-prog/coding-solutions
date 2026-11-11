@@ -60,15 +60,45 @@ If Chef went to both stores, the cost would be $\ge 200$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T14:43:16.669Z  
+**Submitted:** 2026-11-11T14:43:56.829Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n, d;
+        cin >> n >> d;
+
+        int a[100], b[100];
+
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            cin >> b[i];
+        }
+
+        int cost1 = d;
+        int cost2 = d;
+        int cost3 = 2 * d;
+
+        for (int i = 0; i < n; i++) {
+            cost1 += a[i];
+            cost2 += b[i];
+            cost3 += min(a[i], b[i]);
+        }
+
+        cout << min({cost1, cost2, cost3}) << endl;
+    }
+
+    return 0;
 }
 
 ```
