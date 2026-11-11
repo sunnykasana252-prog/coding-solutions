@@ -68,15 +68,42 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T14:44:16.530Z  
+**Submitted:** 2026-11-11T14:44:48.524Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n;
+        cin >> n;
+
+        string s;
+        cin >> s;
+
+        int count = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            int x = s[(i + n - 2) % n] - '0';
+            int y = s[(i + n - 1) % n] - '0';
+
+            int num = x * 10 + y;
+
+            if (num % 4 == 0) {
+                count++;
+            }
+        }
+
+        cout << count << endl;
+    }
+
+    return 0;
 }
 
 ```
