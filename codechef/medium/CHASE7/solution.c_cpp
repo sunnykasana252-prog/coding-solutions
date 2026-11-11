@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   int x,y;
   cin>>x>>y;
-  if(x%6<y){
+  if(x/6<y){
       cout<<"Yes"<<endl;
   }
   else{
