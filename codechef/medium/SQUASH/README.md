@@ -68,15 +68,41 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:02:45.229Z  
+**Submitted:** 2026-11-18T16:01:06.497Z  
 
 ```c_cpp
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+
+        string s;
+        cin >> s;
+
+        int groups = 1;
+
+        for (int i = 1; i < n; i++) {
+            if (s[i] != s[i - 1]) {
+                groups++;
+            }
+        }
+
+        if (k >= groups && k <= n) {
+            cout << "YES" << endl;
+        }
+        else {
+            cout << "NO" << endl;
+        }
+    }
+
+    return 0;
 }
 
 ```
