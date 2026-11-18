@@ -1,18 +1,33 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int n;
-	cin>>n;
-	while(n--){
-	    int n;
-	    cin>>n;
-	    arr[n];
-	    for(int i=0;i<n;i++){
-	        cin>>arr[i];
-	    }
-	   
-	    
-	}
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n;
+        cin >> n;
+
+        int a[101];
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            cin >> a[i];
+            sum += a[i];
+        }
+
+        int mini = INT_MAX;
+
+        for (int i = 0; i < n - 1; i++) {
+            int loss = a[i] / 2 + a[i + 1] / 2;
+
+            mini = min(mini, loss);
+        }
+
+        cout << sum - mini << endl;
+    }
+
+    return 0;
 }
