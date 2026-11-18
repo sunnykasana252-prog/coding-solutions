@@ -63,14 +63,25 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T14:41:22.431Z  
+**Submitted:** 2026-11-18T14:44:17.211Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+	int n;
+	cin>>n;
+	while(n--){
+	    int n;
+	    cin>>n;
+	    arr[n];
+	    for(int i=0;i<n;i++){
+	        cin>>arr[i];
+	    }
+	   
+	    
+	}
 
 }
 
