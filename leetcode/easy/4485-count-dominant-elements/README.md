@@ -68,9 +68,9 @@ Therefore, the answer is 1.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
+**Runtime:** 1 ms (beats 22.22%)  
 **Memory:** 30.8 MB (beats 100.00%)  
-**Submitted:** 2026-11-22T03:38:20.409Z  
+**Submitted:** 2026-11-22T03:38:27.820Z  
 
 ```cpp
 class Solution {
