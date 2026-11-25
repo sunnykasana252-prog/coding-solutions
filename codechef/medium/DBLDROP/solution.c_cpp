@@ -1,7 +1,41 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+    int T;
+    cin >> T;
 
+    while (T--) {
+        int N;
+        cin >> N;
+
+        vector<long long> A(N);
+        long long sum = 0;
+
+        for (int i = 0; i < N; i++) {
+            cin >> A[i];
+            sum += A[i];
+        }
+
+        long long ans = sum - *max_element(A.begin(), A.end());
+
+        for (int i = 0; i < N; i++) {
+
+            A[i] = A[i] * 2;
+
+            long long newSum = sum + A[i] / 2;
+            long long mx = *max_element(A.begin(), A.end());
+
+            long long score = newSum - mx;
+
+            ans = max(ans, score);
+
+            A[i] = A[i] / 2;
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
 }
