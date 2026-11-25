@@ -1,18 +1,17 @@
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int n;
-	int count=1;
-	cin>>n;
-	if(n==7||n==6){
-	    cout<<1<<endl;
-	}
-	
-	else{
-	    while(n<8){
-	        count++;
-	    }
-	}
+    int n;
+    cin >> n;
 
+    if (n == 2) {
+        cout << 5 << endl;
+    }
+    else {
+        cout << 8 - n << endl;
+    }
+
+    return 0;
 }
